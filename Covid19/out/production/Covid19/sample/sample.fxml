@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button fx:id="getDataButton" mnemonicParsing="false" onAction="#onGetDataClicked" text="Get Data" GridPane.columnIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="urlTextField" GridPane.columnIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label text="Xml Url">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView prefHeight="200.0" prefWidth="886.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+          <TableColumn prefWidth="75.0" text="Country" />
+          <TableColumn prefWidth="75.0" text="Total Cases" />
+            <TableColumn prefWidth="75.0" text="Total Dates" />
+            <TableColumn prefWidth="75.0" text="Total Dates" />
+            <TableColumn prefWidth="75.0" text="New Dates" />
+            <TableColumn prefWidth="75.0" text="Population" />
+            <TableColumn prefWidth="75.0" text="Mortality" />
+            <TableColumn prefWidth="75.0" text="Attack Rate" />
+        </columns>
+      </TableView>
+      <LineChart GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</GridPane>
